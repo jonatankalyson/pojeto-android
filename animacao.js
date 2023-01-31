@@ -40,7 +40,8 @@ function dowinit(){
  const ul =document.querySelector('.js-ul')
  
  function down(){
-    ul.classList.add('ativo')
+    clickqui.classList.toggle('ativo')
+    ul.classList.toggle('ativo')
  }
 
  clickqui.addEventListener('click', down)
