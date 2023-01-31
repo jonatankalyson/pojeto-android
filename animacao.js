@@ -34,3 +34,16 @@ const main = document.querySelector('main')
         e.addEventListener('click', kkk)
     });
 }
+
+function dowinit(){
+ const clickqui = document.querySelector('.js-titulo')
+ const ul =document.querySelector('.js-ul')
+ 
+ function down(){
+    ul.classList.add('ativo')
+ }
+
+ clickqui.addEventListener('click', down)
+
+}
+dowinit()
