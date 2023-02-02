@@ -48,3 +48,27 @@ function dowinit(){
 
 }
 dowinit()
+
+function scroll(){
+    const linkinterno = document.querySelectorAll('.js-scroll a[href^="#"]')
+
+    function scrollsuave(event){
+        event.preventDefault()
+        const ref = event.currentTarget.getAttribute('href')
+        const div = document.querySelector(ref)
+
+        div.scrollIntoView({
+            block: "start", inline: "nearest",
+            behavior: 'smooth',
+        })
+        
+    }
+
+
+
+    linkinterno.forEach((i)=>{
+        i.addEventListener('click', scrollsuave)
+    })
+    
+}
+scroll()

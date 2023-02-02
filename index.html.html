@@ -187,14 +187,14 @@
             color: white;
         }
         .modo-escuro h2{
-            
+            color: white;
         }
         html.p{
            font-size: 30px;
         }
         .link a{
            
-            color: black;
+            background: red;
         }
         .js-titulo p::after{
             content: '⬎';
@@ -216,21 +216,21 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="js-scroll">
         <h1>Curiosidades de Tecnologia</h1>
         <nav>
             <h4>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</h4>
            
-            <a href="#">Home</a>
-            <a href="#">Notícias</a>
-            <a href="#">Fale Conosco</a>
+            <a href="#home">Home</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#contato">Contato</a>
 
 
         </nav>
 
     </header>
     <main>
-        <section >
+        <section  >
             <article>
 
                 <h1 class="p1">História do Mascote do Android</h1>
@@ -239,7 +239,7 @@
                     Provavelmente você sabe que o sistema operacional <span>Android</span>, mantido pelo <span>Google</span> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.
                 </p>
 
-                <h2>A primeira versão</h2>
+                <h2 id="home">A primeira versão</h2>
 
                 <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <span>Dan Morrill</span>. Ele conta que abriu o <span>Inkscape</span> (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
 
@@ -283,7 +283,7 @@
                 <div class="videos"><iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
             </article>
-            <aside> 
+            <aside id="noticias"> 
                 <div id="esp">
                 <p id="alto" class="js-titulo">Quer aprender mais? click em min!! </p>
                 <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
@@ -314,6 +314,20 @@
      
                 Site criado por Gustavo Guanabara para o CursoemVideo.</p>
             </aside>
+
+            <section id="contato">
+                <div>
+                    <h1 class="titulo">Contato</h1>
+                </div>
+                <div>
+                    <ul class="dados">
+                       <li>contato@origamid.com</li>
+                       <li>+55 (21) 9999-9999</li>
+                       <li>Rua do Conde, nº 21</li>
+                       <li>Rio de Janeiro - RJ</li>
+                    </ul>
+                </div>
+            </section>
 
         </section>
         
